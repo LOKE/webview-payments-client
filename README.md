@@ -27,7 +27,7 @@ const lokeApp = new LokeApp({ clientId: "loke-provided-client-id" });
 function App() {
   const handleClick = async () => {
     try {
-      const nonce = await lokeApp.payment({
+      const { nonce } = await lokeApp.payment({
         total: 550,
         tax: 50,
         orderRef: "my-unique-ref",
