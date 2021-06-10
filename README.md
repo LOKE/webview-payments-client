@@ -19,7 +19,7 @@ const lokeApp = new LokeApp({ clientId: "loke-provided-client-id" });
 ### Example React Project
 
 ```jsx
-import { LokeApp } from "./lib";
+import { LokeApp } from "@loke/webview-payments-client";
 
 // You may want to pass in lokeApp as a prop, or initialise some other way
 const lokeApp = new LokeApp({ clientId: "loke-provided-client-id" });
@@ -66,7 +66,7 @@ export default App;
 You will need to also provide the "mock window" with some test data:
 
 ```js
-import { createMockWindow, LokeApp } from "./lib";
+import { createMockWindow, LokeApp } from "@loke/webview-payments-client";
 
 const customer = {
   token: "test-access-token",
