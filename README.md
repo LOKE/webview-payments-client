@@ -99,6 +99,8 @@ import { LokeApp, createMockWindow } from "@loke/webview-payments-client";
 const mockWindow = createMockWindow({
   // If you want to use this within a browser
   interactive: true,
+  // You need to pass in details for the customer linked to the mock
+  customer,
 })
 const lokeApp = new LokeApp({ clientId: "loke-provided-client-id", window: mockWindow });
 ```
@@ -117,6 +119,8 @@ const window = createMockWindow({
   // eg node-fetch or unfetch
   // You could also use a fetch variant with mocked or recorded responses for tests
   fetch: nodeFetch,
+  // You need to pass in details for the customer linked to the mock
+  customer,
 })
 // You can then pass in the mock window to LokeApp and it will provide the behaviour of the app
 const lokeApp = new LokeApp({ clientId: "loke-provided-client-id", window });
