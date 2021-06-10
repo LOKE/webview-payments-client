@@ -31,6 +31,7 @@ function App() {
         total: 550,
         tax: 50,
         orderRef: "my-unique-ref",
+        orderStoreId: "your-unique-id-shared-with-loke",
         items: [
           { amount: 450, name: "Coffee", quantity: 1 },
           { amount: 100, name: "Hug", quantity: 10 },
